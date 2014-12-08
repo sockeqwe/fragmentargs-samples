@@ -1,5 +1,6 @@
 package com.hannesdorfmann.fragmentargstest;
 
+import com.christianbahl.mylibrary.B;
 import com.hannesdorfmann.fragmentargs.annotation.InheritedFragmentArgs;
 
 /**

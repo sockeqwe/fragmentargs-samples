@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import com.christianbahl.mylibrary.B;
 import com.hannesdorfmann.fragmentargs.FragmentArgs;
 import com.hannesdorfmann.fragmentargs.annotation.InheritedFragmentArgs;
 
@@ -29,7 +30,7 @@ public class PlaceholderFragment extends B {
     View rootView = inflater.inflate(R.layout.fragment_my, container, false);
     TextView tv = (TextView) rootView.findViewById(R.id.name);
 
-    tv.setText("" + a + " " + b);
+    //tv.setText("" + a + " " + b);
     return rootView;
   }
 }
