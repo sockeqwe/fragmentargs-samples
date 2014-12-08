@@ -1,4 +1,4 @@
-package com.hannesdorfmann.fragmentargstest;
+package com.christianbahl.mylibrary;
 
 import com.hannesdorfmann.fragmentargs.annotation.Arg;
 import com.hannesdorfmann.fragmentargs.annotation.InheritedFragmentArgs;

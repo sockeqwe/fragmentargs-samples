@@ -14,7 +14,7 @@ android {
 
   defaultConfig {
     applicationId "com.hannesdorfmann.fragmentargstest"
-    minSdkVersion 14
+    minSdkVersion 15
     targetSdkVersion 21
     versionCode 1
     versionName "1.0"
@@ -34,4 +34,5 @@ dependencies {
   compile 'com.hannesdorfmann.fragmentargs:annotation:'+fragVersion
   apt 'com.hannesdorfmann.fragmentargs:processor:'+fragVersion
 
+  compile project(':mylibrary')
 }

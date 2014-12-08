@@ -1,4 +1,4 @@
-package com.hannesdorfmann.fragmentargstest;
+package com.christianbahl.mylibrary;
 
 import android.app.Fragment;
 import com.hannesdorfmann.fragmentargs.annotation.Arg;
