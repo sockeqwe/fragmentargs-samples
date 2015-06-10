@@ -6,12 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.hannesdorfmann.fragmentargs.FragmentArgs;
-import com.hannesdorfmann.fragmentargs.annotation.InheritedFragmentArgs;
+import com.hannesdorfmann.fragmentargs.annotation.FragmentArgsInherited;
 
 /**
  * @author Hannes Dorfmann
  */
-@InheritedFragmentArgs
+@FragmentArgsInherited
 public class PlaceholderFragment extends B {
 
 
