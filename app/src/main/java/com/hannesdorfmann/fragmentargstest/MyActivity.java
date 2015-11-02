@@ -12,12 +12,12 @@ public class MyActivity extends Activity {
     setContentView(R.layout.activity_my);
     if (savedInstanceState == null) {
       getFragmentManager().beginTransaction()
-          .add(R.id.container, new PlaceholderFragmentBuilder(123).b(2).build())
+          .add(R.id.container, new OnlyOptionalFragments())
           .commit();
 
       getFragmentManager().beginTransaction()
-          .add(R.id.container, new CBuilder(5, new UnsupportedData(1, "foo"),
-                  new UnsupportedData(2, "oFoo")).build())
+          .add(R.id.container, new DeprecatedCBuilder(5, new UnsupportedData(1, "foo"),
+              new UnsupportedData(2, "oFoo")).build())
           .commit();
     }
   }

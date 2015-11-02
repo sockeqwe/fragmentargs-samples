@@ -12,7 +12,7 @@ import com.hannesdorfmann.fragmentargs.annotation.FragmentArgsInherited;
  * @author Hannes Dorfmann
  */
 @FragmentArgsInherited
-public class PlaceholderFragment extends B {
+public class PlaceholderFragment extends DeprecatedB {
 
 
   public PlaceholderFragment() {
