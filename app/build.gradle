@@ -44,7 +44,7 @@ android {
   }
 }
 
-def fragVersion = "4.0.0.1-SNAPSHOT";
+def fragVersion = "3.0.2";
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])

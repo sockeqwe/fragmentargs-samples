@@ -16,7 +16,7 @@ import com.hannesdorfmann.fragmentargs.bundler.ParcelerArgsBundler;
 
   @Arg(bundler = ParcelerArgsBundler.class, required = false) ParcelerModel model;
 
-  @Arg NotParcelableClass notParcelableClass;
+  //@Arg NotParcelableClass notParcelableClass;
 
   @Override public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);

@@ -23,9 +23,7 @@ public class MyActivity extends Activity {
 
     // Just reference some builders for fun
     new OnlyOptionalFragmentsBuilder();
-    new SimpleFragmentBuilder("a", "b", "c");
-    new NativeDialogFragmentBuilder("test");
-    new CBuilder(1, new UnsupportedData(), new NotParcelableClass(), new UnsupportedData());
+    new CBuilder(1, new UnsupportedData(), new UnsupportedData());
   }
 
   @Override public boolean onCreateOptionsMenu(Menu menu) {
