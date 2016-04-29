@@ -20,6 +20,12 @@ public class MyActivity extends Activity {
               new UnsupportedData(2, "oFoo")).build())
           .commit();
     }
+
+    // Just reference some builders for fun
+    new OnlyOptionalFragmentsBuilder();
+    new SimpleFragmentBuilder("a", "b", "c");
+    new NativeDialogFragmentBuilder("test");
+    new CBuilder(1, new UnsupportedData(), new NotParcelableClass(), new UnsupportedData());
   }
 
   @Override public boolean onCreateOptionsMenu(Menu menu) {

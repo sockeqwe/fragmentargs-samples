@@ -10,6 +10,7 @@ import android.widget.TextView
 import com.hannesdorfmann.fragmentargs.FragmentArgs
 import com.hannesdorfmann.fragmentargs.annotation.Arg
 import com.hannesdorfmann.fragmentargs.annotation.FragmentWithArgs
+import com.hannesdorfmann.fragmentargs.bundler.ParcelerArgsBundler
 
 /**
  * @author Hannes Dorfmann
@@ -19,6 +20,7 @@ class KotlinFragment : A() {
 
     @Arg var foo: String = "foo"
     @Arg(required = false) lateinit var bar: String
+    @Arg (bundler = ParcelerArgsBundler::class, required = false) var model: ParcelerModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

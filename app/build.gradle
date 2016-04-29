@@ -44,7 +44,7 @@ android {
   }
 }
 
-def fragVersion = "3.0.0";
+def fragVersion = "4.0.0.1-SNAPSHOT";
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -67,11 +67,11 @@ dependencies {
 
 
   compile "org.parceler:parceler-api:1.0.0"
-  apt "org.parceler:parceler:1.0.0"
+  kapt "org.parceler:parceler:1.0.0"
   compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 buildscript {
-  ext.kotlin_version = '1.0.0-beta-1103'
+  ext.kotlin_version = '1.0.1'
   repositories {
     mavenCentral()
   }
