@@ -1,9 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.neenbedankt.android-apt'
+//apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'com.jakewharton.hugo'
 
-
+/*
 apt {
   arguments {
     fragmentArgsLib false
@@ -11,7 +11,7 @@ apt {
     fragmentArgsBuilderAnnotations "hugo.weaving.DebugLog"
   }
 }
-
+*/
 kapt {
   generateStubs = true
   arguments {
@@ -23,8 +23,8 @@ kapt {
 
 
 android {
-  compileSdkVersion 21
-  buildToolsVersion "23.0.1"
+  compileSdkVersion 23
+  buildToolsVersion "23.0.3"
 
   defaultConfig {
     applicationId "com.hannesdorfmann.fragmentargstest"
@@ -44,7 +44,7 @@ android {
   }
 }
 
-def fragVersion = "3.0.2";
+def fragVersion = "4.0.0-SNAPSHOT";
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -58,7 +58,7 @@ dependencies {
   compile('com.android.support:support-v4:23.1.0')
 
   compile 'com.hannesdorfmann.fragmentargs:annotation:' + fragVersion
-  apt 'com.hannesdorfmann.fragmentargs:processor:' + fragVersion
+  //apt 'com.hannesdorfmann.fragmentargs:processor:' + fragVersion
   kapt 'com.hannesdorfmann.fragmentargs:processor:' + fragVersion
 
   compile 'com.hannesdorfmann.fragmentargs:bundler-parceler:' + fragVersion
@@ -71,7 +71,7 @@ dependencies {
   compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 buildscript {
-  ext.kotlin_version = '1.0.1'
+  ext.kotlin_version = '1.0.4'
   repositories {
     mavenCentral()
   }
