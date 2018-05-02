@@ -12,4 +12,8 @@ import com.hannesdorfmann.fragmentargs.annotation.FragmentWithArgs;
   void setB(int b) {
     this.b = b;
   }
+
+  public int getB() {
+    return b;
+  }
 }
